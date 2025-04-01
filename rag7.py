@@ -14,7 +14,7 @@ GOOGLE_API_KEY = "AIzaSyDEbMTwl6pvaODmLCIuaszVZJe3J_R3lBA"
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # PDF Path (Manually defined)
-pdf_path = "orders_data_merged.pdf"  # Change this to your actual file path
+pdf_path = "address_data-merged.pdf"  # Change this to your actual file path
 
 st.set_page_config(page_title="📄 AI PDF Data Extractor with Graphs", layout="wide")
 st.title("📄 AI PDF Data Extractor with Graphs")
