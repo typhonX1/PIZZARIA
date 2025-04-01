@@ -6,4 +6,4 @@ langchain-google-genai
 matplotlib
 seaborn
 pandas
-re
+
