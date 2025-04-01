@@ -15,7 +15,7 @@ GOOGLE_API_KEY = "AIzaSyAA9C_89mLP9YrWCJaCFUDsITS3ofmhQJU"
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # PDF Path (Manually defined)
-pdf_path = "orders_data_merged.pdf"  # Ensure this file exists
+pdf_path = "address_data_merged.pdf"  # Ensure this file exists
 
 st.set_page_config(page_title="PIZZARIA", layout="wide")
 st.title("PIZZARIA🍕")
