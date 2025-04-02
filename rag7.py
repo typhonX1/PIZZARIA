@@ -10,15 +10,15 @@ import seaborn as sns
 import re
 
 # Set Google API Key
-GOOGLE_API_KEY = "AIzaSyDEbMTwl6pvaODmLCIuaszVZJe3J_R3lBA"
+GOOGLE_API_KEY = "AIzaSyCXQl30wvQ2wcG7gfyZeNtaQZjf7IXYwG4"
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 
 # PDF Path (Manually defined)
 pdf_path = "address_data-merged.pdf"  # Change this to your actual file path
 
-st.set_page_config(page_title="📄 AI PDF Data Extractor with Graphs", layout="wide")
-st.title("📄 AI PDF Data Extractor with Graphs")
-st.markdown("Ask any question from your PDF and get structured answers, with graphs when relevant!")
+st.set_page_config(page_title="pizzaria", layout="wide")
+st.title("PIZZARIA🍕")
+st.markdown("Ask any query!")
 
 # Check if the PDF file exists
 if os.path.exists(pdf_path):
@@ -38,7 +38,7 @@ if os.path.exists(pdf_path):
     qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=vectorstore.as_retriever(), chain_type="stuff")
 
     # User input
-    user_question = st.text_input("🔎 Ask a question from the PDF:")
+    user_question = st.text_input("🔎 Ask a query from the dataset:")
 
     if user_question:
         # Answer retrieval
